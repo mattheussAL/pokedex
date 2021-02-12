@@ -1,0 +1,23 @@
+import React from 'react';
+import Head from 'next/head'
+
+function Layout({ title, children }) {
+ return (
+  <div className="bg-gray-300">
+   <Head>
+    <title>{title}</title>
+    <link rel="icon" href="/favicon.ico" />
+   </Head>
+
+   <main className="
+    container mx-auto max-w-xl pt-8 min-h-screen sm:bg-white p-12
+    sm:border-4 rounded-md
+   ">
+    {children}
+   </main>
+
+  </div>
+ );
+}
+
+export default Layout;
